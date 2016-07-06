@@ -29,6 +29,68 @@ body{
 .center-base{
     width: 330px;
     color: #ffffff;
+    height: 100%;
+    float: left;
+}
+
+.center-form{
+    width: 420px;
+    float: left;
+    background: #ffffff;
+    height: 100%;
+}
+
+.form-label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.hundred{
+    width: 100%;
+}
+
+.form-group{
+    height: 36px;
+}
+
+.input-box{
+    font-size: 14px;
+    width: 100%;
+    height: 36px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: solid 1px #dfe3e9;
+}
+
+.fifty-left{
+    width: 47%;
+    margin-right: 3%;
+    float: left;
+}
+
+.fifty-right{
+    width: 47%;
+    margin-left: 3%;
+    float: left;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-weight: 600;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-weight: 600;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-weight: 600;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-weight: 600;
+}
+
+.padding30{
     padding: 30px;
 }
 
