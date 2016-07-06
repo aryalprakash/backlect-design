@@ -1,3 +1,64 @@
-h1{
-    color: red;
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic,200,300,300italic,400,400italic,600,600italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Viga);
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo{
+    font-family: Viga;
+}
+
+.bg {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1976d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-box{
+    display: flex;
+    width: 750px;
+    height: 447px;
+    border-radius: 4px;
+    background-color: #2196f3;
+}
+
+.center-base{
+    width: 330px;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.center-box-logo{
+    font-size: 38px;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: #2196f3;
+}
+
+.title1{
+    font-size: 26px;
+    margin: 10px 0 10px 0;
+}
+
+.title2{
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+
+.para-text{
+    font-size: 14px;
+    line-height: 21px;
+    color: #88c7f8;
 }
