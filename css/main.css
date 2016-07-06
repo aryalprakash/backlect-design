@@ -33,13 +33,6 @@ body{
     background-color: #2196f3;
 }
 
-.center-box-welcome{
-    width: 430px;
-    height: 261px;
-    flex-direction: column;
-}
-
-
 .center-base{
     width: 330px;
     color: #ffffff;
@@ -140,33 +133,6 @@ body{
     height: 44px;
     border-radius: 4px;
     background-color: #2196f3;
-}
-
-.dialog-top-bar {
-    background-color: #2196f3;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 600;
-    padding: 40px;
-}
-
-
-.dialog-top-bar-description {
-    width: 347px;
-    height: 36px;
-    opacity: 0.8;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    color: #ffffff;
-}
-
-.dialog-content{
-    background-color: white;
-    padding: 25px;
 }
 
 .title1{

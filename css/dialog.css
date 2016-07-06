@@ -1,0 +1,74 @@
+.dialog-box{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 261px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.dialog-header {
+    flex: 4;
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    padding: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.dialog-header-title {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.dialog-header-description {
+    width: 347px;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.dialog-content{
+    flex: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.input-box {
+    height: 45px!important;
+    margin: 5px;
+}
+
+.dialog-footer {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #f9f7f7;
+}
+
+.dialog-link{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.36;
+    text-decoration: none;
+    text-align: center;
+    color: #2196f3;
+    margin-right : 25px;
+}
+
+.form-button {
+    width: 160px!important;
+    margin-right: 30px!important;
+}
