@@ -13,7 +13,6 @@ import RoleAdd from "./components/RoleAdd";
 require('../css/main.css');
 require('../css/dialog.css');
 
-
 ReactDOM.render(
     <Router history={hashHistory}>
     <Route path='/' component={App} />

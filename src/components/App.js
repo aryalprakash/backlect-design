@@ -42,6 +42,9 @@ export default class App extends Component {
                     <button type="submit" className="form-button">Continue</button>
                   </form>
                 </div>
+                <div className="center-footer">
+                  Already have an account?&nbsp;<a href="#" className="bold link">Sign In</a>
+                </div>
               </div>
             </div>
           </div>
