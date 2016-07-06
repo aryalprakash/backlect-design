@@ -44,8 +44,9 @@
     padding: 20px;
 }
 
-.input-box {
-
+.dialog-input-box {
+    height: 45px;
+    margin: 5px;
 }
 
 .dialog-footer {
@@ -67,11 +68,11 @@
     margin-right : 25px;
 }
 
-.form-button {
-    width: 160px!important;
-    margin-right: 30px!important;
+.dialog-form-button {
+    width: 160px;
+    margin-right: 30px;
 }
 
-.form-button-danger{
+.dialog-form-button-danger{
     background-color: #ff0080;
 }

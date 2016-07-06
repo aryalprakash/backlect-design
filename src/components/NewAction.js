@@ -26,10 +26,10 @@ export default class NewAction extends Component{
                                    subtitle="Like, comment, counts are all seen as actions in backlect, and like fields can have Permissions set."
                     />
                     <div className="dialog-content" >
-                        <input className="input-box" placeholder="Task"/>
+                        <input className="input-box dialog-input-box" placeholder="Task"/>
                     </div>
                     <div className="dialog-footer">
-                        <button type="submit" className="form-button">Add</button>
+                        <button type="submit" className="form-button dialog-form-button">Add</button>
                     </div>
                 </div>
             </div>

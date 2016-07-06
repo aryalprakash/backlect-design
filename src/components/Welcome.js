@@ -35,10 +35,10 @@ export default class Welcome extends Component {
                     <TitleSubtitle title="Hi Jimmy, Add your first table."
                                    subtitle="Tables can store form input, videos, photos, text, app data etc. Example table name is Task to store tasks"/>
                     <div className="dialog-content">
-                        <input className="input-box" placeholder="Task"/>
+                        <input className="input-box dialog-input-box" placeholder="Task"/>
                     </div>
                     <div className="dialog-footer">
-                        <button type="submit" className="form-button">Next</button>
+                        <button type="submit" className="form-button dialog-form-button">Next</button>
                     </div>
                 </div>
             </div>

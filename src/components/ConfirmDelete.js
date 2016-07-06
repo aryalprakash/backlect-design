@@ -29,10 +29,10 @@ export default class ConfirmDelete extends Component{
                                    style={{"background-color": "#ff0080"}}
                     />
                     <div className="dialog-content">
-                        <input className="input-box" placeholder="Type 'delete' to continue.."/>
+                        <input className="input-box dialog-input-box" placeholder="Type 'delete' to continue.."/>
                     </div>
                     <div className="dialog-footer">
-                        <button type="submit" className="form-button form-button-danger">Delete</button>
+                        <button type="submit" className="form-button dialog-form-button dialog-form-button-danger">Delete</button>
                     </div>
                 </div>
             </div>

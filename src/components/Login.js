@@ -26,12 +26,12 @@ export default class Login extends Component{
                                    style={{flex: 3}}
                     />
                     <div className="dialog-content" style={{flex: 3}}>
-                        <input className="input-box" placeholder="Username"/>
-                        <input className="input-box" placeholder="Password"/>
+                        <input className="input-box dialog-input-box" placeholder="Username"/>
+                        <input className="input-box dialog-input-box" placeholder="Password"/>
                     </div>
                     <div className="dialog-footer">
                         <a className="dialog-link" href="#">Forgot Password?</a>
-                        <button type="submit" className="form-button">Sign In</button>
+                        <button type="submit" className="form-button dialog-form-button">Sign In</button>
                     </div>
                 </div>
             </div>

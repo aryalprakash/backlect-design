@@ -25,10 +25,10 @@ export default class RoleAdd extends Component{
                                    subtitle="Roles can be used to delegate access permissions to your backlect admins."
                     />
                     <div className="dialog-content" >
-                        <input className="input-box" placeholder="New Role"/>
+                        <input className="input-box dialog-input-box" placeholder="New Role"/>
                     </div>
                     <div className="dialog-footer">
-                        <button type="submit" className="form-button">Add</button>
+                        <button type="submit" className="form-button dialog-form-button">Add</button>
                     </div>
                 </div>
             </div>

@@ -25,11 +25,11 @@ export default class ForgotPassword extends Component{
                                    subtitle="Type your email and we'll reset your password"
                     />
                     <div className="dialog-content" >
-                        <input className="input-box" placeholder="Your email"/>
+                        <input className="input-box dialog-input-box" placeholder="Your email"/>
                     </div>
                     <div className="dialog-footer">
                         <a className="dialog-link" href="#">Sign in</a>
-                        <button type="submit" className="form-button">Reset Password</button>
+                        <button type="submit" className="form-button dialog-form-button">Reset Password</button>
                     </div>
                 </div>
             </div>
