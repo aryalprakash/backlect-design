@@ -6,6 +6,12 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .logo{
     font-family: Viga;
 }
@@ -70,6 +76,25 @@ body{
     border-radius: 4px;
     padding-left: 10px;
     border: solid 1px #dfe3e9;
+}
+
+.input-full{
+    max-width: 360px;
+}
+
+.input-half{
+    max-width: 175px;
+}
+.form-button{
+    background-color: #2196f3;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    height: 36px;
+    border: none;
 }
 
 .fifty-left{

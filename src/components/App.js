@@ -22,22 +22,24 @@ export default class App extends Component {
                   <div className="title1">Create Your Free Account</div>
                   <form className="signup-form">
                     <div className="form-label">Email</div>
-                    <input type="text" placeholder="james@backlect.com" className="input-box" />
+                    <input type="text" placeholder="james@backlect.com" className="input-box input-full" />
                     <div className="form-label">First Name</div>
                     <div className="hundred form-group">
                       <div className="fifty-left">
-                        <input type="text" placeholder="Your Name" className="input-box" />
+                        <input type="text" placeholder="Your Name" className="input-box input-half" />
                       </div>
                       <div className="fifty-right">
-                        <input type="text" placeholder="Your Surname" className="input-box" />
+                        <input type="text" placeholder="Your Surname" className="input-box input-half" />
                       </div>
                     </div>
                     <div className="form-label">Password</div>
                     <div className="hundred form-group">
                       <div className="fifty-left">
-                        <input type="password" placeholder="Password" className="input-box" />
+                        <input type="password" placeholder="Password" className="input-box input-half" />
                       </div>
                     </div>
+
+                    <button type="submit" className="form-button">Continue</button>
                   </form>
                 </div>
               </div>
