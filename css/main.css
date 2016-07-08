@@ -167,3 +167,149 @@ body{
     line-height: 21px;
     color: #88c7f8;
 }
+
+.light-blue{
+    background-color: #2196f3;
+}
+/*Heade*/
+.header-container{
+    height: 85px;
+    background-color: #1976d2;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-project{
+    width: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-project{
+    margin-left: 10px;
+}
+
+.current-project{
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+.select-project{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.header-profile{
+
+}
+
+
+/*Table*/
+.table-head{
+    height: 70px;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.search-box{
+    width: 270px;
+}
+
+.search-icon{
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 14px;
+}
+
+.border-button{
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 5px;
+   padding: 8px;
+}
+
+.left-paging{
+    border: 1px solid white;
+    border-radius: 4px 0 0 4px;
+    padding: 8px;
+    text-align: center;
+    width: 40px;
+    float: left;
+}
+
+.table-paging{
+    margin: 5px;
+}
+
+.right-paging{
+    border: 1px solid white;
+    border-radius:  0 4px 4px 0;
+    padding: 8px;
+    text-align: center;
+    width: 40px;
+    float: left;
+    border-left: none;
+}
+.table{
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    min-height: 80vh;
+}
+
+.table-sidebar{
+    width:25%;
+    max-width: 250px;
+    float: left;
+    height: 869px;
+}
+
+.table-content{
+    width: 75%;
+    float: left;
+}
+
+.table-total{
+    margin: 5px;
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.table-title{
+    width: 250px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.table-options{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.table-new{
+    max-height: 38px;
+    display: flex;
+    align-items: center;
+
+}
+
+.table-settings{
+    width: 40px;
+    text-align: center;
+}

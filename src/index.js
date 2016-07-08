@@ -5,6 +5,7 @@ import Welcome from './components/Welcome'
 import Login from './components/Login'
 import ForgotPassword from './components/ForgotPassword'
 import ConfirmDelete from './components/ConfirmDelete'
+import Table from './components/Table'
 
 import { Router, Route, hashHistory } from 'react-router'
 import NewAction from "./components/NewAction";
@@ -22,6 +23,7 @@ ReactDOM.render(
     <Route path='/newaction' component={NewAction} />
     <Route path='/confirmdelete' component={ConfirmDelete} />
     <Route path='/roleadd' component={RoleAdd} />
+    <Route path='/table' component={Table} />
     </Router>,
 
     document.getElementById('root'));
