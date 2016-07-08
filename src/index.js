@@ -5,7 +5,9 @@ import Welcome from './components/Welcome'
 import Login from './components/Login'
 import ForgotPassword from './components/ForgotPassword'
 import ConfirmDelete from './components/ConfirmDelete'
+import ListElements from './components/ListElements'
 import Table from './components/Table'
+import ListView from './components/ListView'
 
 import { Router, Route, hashHistory } from 'react-router'
 import NewAction from "./components/NewAction";
@@ -24,6 +26,8 @@ ReactDOM.render(
     <Route path='/confirmdelete' component={ConfirmDelete} />
     <Route path='/roleadd' component={RoleAdd} />
     <Route path='/table' component={Table} />
+    <Route path='/list-elements' component={ListElements} />
+    <Route path='/list-view' component={ListView} />
     </Router>,
 
     document.getElementById('root'));
