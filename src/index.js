@@ -10,6 +10,7 @@ import Table from './components/Table'
 import { Router, Route, hashHistory } from 'react-router'
 import NewAction from "./components/NewAction";
 import RoleAdd from "./components/RoleAdd";
+import FieldSettings from "./components/FieldSettings";
 
 require('../css/main.css');
 require('../css/dialog.css');
@@ -24,6 +25,7 @@ ReactDOM.render(
     <Route path='/confirmdelete' component={ConfirmDelete} />
     <Route path='/roleadd' component={RoleAdd} />
     <Route path='/table' component={Table} />
+    <Route path='/fieldsettings' component={FieldSettings} />
     </Router>,
 
     document.getElementById('root'));

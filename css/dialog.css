@@ -8,13 +8,14 @@
 }
 
 .dialog-header {
-    flex: 4;
+    /*flex: 4;*/
     background-color: #2196f3;
     color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    height: 110px;
     font-weight: 600;
     padding: 0;
     border-radius: 4px 4px 0 0;
@@ -42,6 +43,11 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+}
+
+.dialog-field{
+    display: flex;
+    flex-direction: row;
 }
 
 .dialog-input-box {
@@ -75,4 +81,26 @@
 
 .dialog-form-button-danger{
     background-color: #ff0080;
+}
+
+.dialog-field-label{
+    flex: 2;
+    margin-top: 15px;
+    margin-left: 6px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.dialog-required-asterisk{
+    margin-right: 5px;
+    /*margin-top: 15px;*/
+    /*margin-left: 50px;*/
+
+    color: red;
+}
+
+.ReactTabs__TabList{
+    margin-top: -2px!important;
 }
