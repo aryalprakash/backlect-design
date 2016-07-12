@@ -209,6 +209,44 @@ body{
 }
 
 
+/*Sidebar*/
+.menu-item{
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.menu-active{
+    width: 5px;
+    height: 30px;
+    background-color: #ffffff;
+}
+
+.menu-title{
+    text-align: center;
+    margin-left: 30px;
+}
+
+.menu-subitem{
+    margin-left: 35px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.subitem-active{
+    font-weight: 400;
+}
+
+.menu-plus{
+    margin-left: auto;
+    font-size: 20px;
+    width: 20px;
+}
+
+
 /*Table*/
 .table-head{
     height: 70px;
@@ -217,6 +255,12 @@ body{
     display: flex;
     align-items: center;
     color: #ffffff;
+}
+
+.results{
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .search-box{
@@ -270,12 +314,16 @@ body{
     max-width: 250px;
     float: left;
     height: 869px;
+    color: #ffffff;
 }
 
 .table-content{
-    width: 75%;
+    width: 100%;
+    max-width: 1090px;
     float: left;
+    font-size: 14px;
 }
+
 
 .table-total{
     margin: 5px;
@@ -286,12 +334,18 @@ body{
     font-size: 20px;
 }
 
+tr.table-row th.bold{
+    font-weight: 800;
+    font-size: 14px;
+}
+
 .table-title{
     width: 250px;
     font-size: 18px;
     font-weight: 600;
     color: white;
     text-align: center;
+    padding-left: 35px;
 }
 
 .table-options{
@@ -312,4 +366,32 @@ body{
 .table-settings{
     width: 40px;
     text-align: center;
+}
+
+.table-main{
+    width: 100%;
+}
+
+.table-image{
+    width: 100%;
+    max-width: 100px;
+    border-radius: 4px;
+}
+
+tr.table-row td {
+    border-bottom:1pt solid #e6eaee;
+    height: 40px;
+    padding: 10px 0 10px 0;
+}
+tr.table-row th {
+    border-bottom:1pt solid #e6eaee;
+    height: 40px;
+    text-align: left;
+    font-weight: 400;
+    color: #1b1945;
+}
+
+tr.table-row th.checkbox, tr.table-row td.checkbox{
+    text-align: center;
+    width: 50px;
 }

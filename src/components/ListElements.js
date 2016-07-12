@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import Header from './Header'
 
-export default class Table extends Component {
+export default class ListElements extends Component {
     render() {
         return (
             <div className="">
                 <Header />
                 <div className="table-head light-blue">
-                    <div className="table-title">Tables &nbsp;&nbsp; <span className="results">|&nbsp;&nbsp;&nbsp;36 Results</span></div>
+                    <div className="table-title">Tables / Workouts</div>
                     <div className="search-box">
                         <input className="input-box" placeholder="Search" type="text" />
                         <img src="../../img/select-project.png" className="search-icon" />
                     </div>
                     <div className="table-options">
-
-                        <div className="border-button table-new"><span className="bold">+</span>&nbsp;&nbsp;&nbsp; New table</div>
+                        <div className="table-total">1 of 28</div>
+                        <div className="table-paging">
+                            <div className=" left-paging">L</div>
+                            <div className=" right-paging">R</div>
+                        </div>
+                        <div className="border-button table-new"><span className="bold">+</span>&nbsp;&nbsp;&nbsp; New Workout</div>
                         <div className="border-button table-settings">S</div>
                     </div>
                 </div>
@@ -27,16 +31,16 @@ export default class Table extends Component {
                                 <span className="menu-plus">+</span>
                             </div>
                             <div className="menu-subitem">
-                                Artists
+                            Artists
                             </div>
                             <div className="menu-subitem subitem-active">
-                                Workouts
+                            Workouts
                             </div>
                             <div className="menu-subitem">
-                                Photos
+                            Photos
                             </div>
                             <div className="menu-subitem">
-                                Reviews
+                            Reviews
                             </div>
 
                         </div>
@@ -53,22 +57,25 @@ export default class Table extends Component {
                     <div className="table-content">
                         <table className="table-main">
                             <thead>
-                            <tr className="table-row">
-                                <th className="checkbox"><form>
-                                <input type="checkbox" className="checkbox"/>
-                                </form></th>
-                                <th className="bold">Table Name</th>
-                                <th>Objects</th>
-                            </tr>
+                                <tr className="table-row">
+                                    <th className="checkbox"><form>
+                                        <input type="checkbox" className="checkbox"/>
+                                    </form></th>
+                                    <th>Progress</th>
+                                    <th>Description</th>
+                                    <th>Units</th>
+                                    <th>Sale</th>
+                                    <th>Active</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr className="table-row"><td className="checkbox"><input type="checkbox" className="checkbox"/></td><td>Contacts</td><td>85</td></tr>
-                            <tr className="table-row"><td className="checkbox"><input type="checkbox" className="checkbox"/></td><td>Tasks</td><td>581</td></tr>
+                                <tr className="table-row"><td className="checkbox"></td><td>29%</td><td></td><td></td><td></td><td></td></tr>
+                                <tr className="table-row"><td className="checkbox"></td><td>29%</td><td></td><td></td><td></td><td></td></tr>
                             </tbody>
-                            </table>
-                        </div>
+                        </table>
                     </div>
                 </div>
+            </div>
         );
     }
 }
