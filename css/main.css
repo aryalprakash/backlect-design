@@ -25,6 +25,11 @@ body{
     justify-content: center;
 }
 
+.dark-blue{
+    background-color: #1976d2;
+    min-height: 100vh;
+}
+
 .center-box{
     display: flex;
     width: 750px;
@@ -71,6 +76,10 @@ body{
     color: inherit;
 }
 
+.no-padding{
+    padding: 0;
+}
+
 .hundred{
     width: 100%;
 }
@@ -86,6 +95,11 @@ body{
     border-radius: 4px;
     padding-left: 10px;
     border: solid 1px #dfe3e9;
+}
+
+.textarea{
+    padding-top: 10px;
+    height: 190px;
 }
 
 .input-full{
@@ -120,17 +134,17 @@ body{
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    font-weight: 600;
+    font-weight: 400;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-    font-weight: 600;
+    font-weight: 400;
 }
 :-ms-input-placeholder { /* IE 10+ */
-    font-weight: 600;
+    font-weight: 400;
 }
 :-moz-placeholder { /* Firefox 18- */
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .padding30{
@@ -231,9 +245,15 @@ body{
 
 .menu-subitem{
     margin-left: 35px;
-    height: 25px;
     font-size: 14px;
     font-weight: 300;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.std-size-160{
+    width: 160px;
 }
 
 .subitem-active{
@@ -310,18 +330,42 @@ body{
 }
 
 .table-sidebar{
-    width:25%;
-    max-width: 250px;
+    width:20%;
+    /*max-width: 250px;*/
     float: left;
     height: 869px;
     color: #ffffff;
 }
 
 .table-content{
-    width: 100%;
-    max-width: 1090px;
+    width: 80%;
+    /*max-width: 1090px;*/
     float: left;
     font-size: 14px;
+}
+
+.pink{
+    background-color: #ff0080;
+}
+
+.grey-green{
+    background-color: #00bcd4;
+}
+
+.orchid{
+    background-color: #ba68c8;
+}
+
+.pull-top{
+    position: absolute;
+    margin-top: 1px;
+}
+
+.menu-status{
+    width: 5px;
+}
+.pipe{
+    margin: 2px;
 }
 
 
@@ -344,7 +388,6 @@ tr.table-row th.bold{
     font-size: 18px;
     font-weight: 600;
     color: white;
-    text-align: center;
     padding-left: 35px;
 }
 
@@ -360,7 +403,70 @@ tr.table-row th.bold{
     max-height: 38px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
+.sub-title{
+    height: 50px;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.divider{
+    height: 1px;
+    background-color: #e6eaee;
+    width: 100%;
+}
+
+.user-row{
+    min-height: 70px;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-icon-container{
+    width: 50px;
+    float: left;
+}
+
+.button-user{
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin: 20px;
+}
+
+.button-role{
+    width: 60px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    text-align: center;
+}
+
+.user-icon{
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.user-name{
+    font-size: 14px;
+    font-weight: 800;
+    color: #354052;
+}
+
+.blue-link{
+    color: #2196f3;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.user-profile{
+    width: 400px;
 }
 
 .table-settings{
@@ -378,6 +484,11 @@ tr.table-row th.bold{
     border-radius: 4px;
 }
 
+.menu-item-list{
+    display: inline-block;
+    width: 100%;
+}
+
 tr.table-row td {
     border-bottom:1pt solid #e6eaee;
     height: 40px;
@@ -391,7 +502,160 @@ tr.table-row th {
     color: #1b1945;
 }
 
-tr.table-row th.checkbox, tr.table-row td.checkbox{
+tr.table-row th.checkbox, tr.table-row td.checkbox {
     text-align: center;
     width: 50px;
+}
+/*Dialog*/
+.back-button {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-head-title{
+    font-size: 22px;
+}
+
+.header-dialog{
+    margin-left: 15px;
+    justify-content: inherit;
+    width: auto;
+}
+
+.dialog-main-content{
+    max-width: 998px;
+    margin: 0 auto;
+}
+
+.dialog-content-head{
+    color: #ffffff;
+    height: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px 0 70px;
+}
+
+.dialog-content-title{
+    font-size: 50px;
+    line-height: 1.42;
+}
+
+.dialog-content-left{
+    max-width: 282px;
+}
+
+.dialog-form{
+    background-color: #ffffff;
+}
+
+.dialog-form-group{
+    width: 100%;
+    padding: 0 70px 0 70px;
+    display: flex;
+    justify-content: center;
+    min-height: 70px;
+    align-items: center;
+}
+
+.dialog-form-label{
+    width: 280px;
+    text-align: right;
+}
+.dialog-form-field{
+    margin-left: 30px;
+    width: 100%;
+}
+
+.rc-dialog-content{
+    background-color: #1976d2;
+}
+
+.rc-dialog-body{
+    padding: 0;
+}
+
+.dark-blue-color{
+    background-color: #1976d2;
+}
+
+.form-builder-head{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: inherit;
+}
+
+.form-builder-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    width: 20%;
+    padding: 25px;
+    background-color: #1b7cd9;
+}
+
+.form-builder-alert{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 5px;
+}
+
+.dialog-main-content.form-builder{
+    width: 100%;
+    max-width: none;
+}
+
+.dialog-center-content{
+    width: 80%;
+    float: left;
+}
+
+.button-group{
+    display: inline-flex;
+}
+
+.dialog-sidebar{
+    color: #ffffff;
+    width: 20%;
+    /*padding: 20px;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    float: left;
+}
+
+.form-item{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: solid 2px #ffffff;
+    /*margin-bottom: 15px;*/
+    /*margin-right: 15px;*/
+    margin: 15px;
+    text-align: center;
+}
+
+.form-item-icon{
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+.form-item-caption{
+    width: 100%;
+    font-size: 11px;
+}
+
+.dialog-form.form-builder .dialog-form-group{
+    padding: 0 30px 0 0;
 }

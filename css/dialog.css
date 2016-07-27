@@ -46,8 +46,9 @@
 }
 
 .dialog-field{
+    height: 55px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
 .dialog-input-box {
@@ -85,7 +86,6 @@
 
 .dialog-field-label{
     flex: 2;
-    margin-top: 15px;
     margin-left: 6px;
     display: flex;
     justify-content: flex-end;
@@ -103,4 +103,14 @@
 
 .ReactTabs__TabList{
     margin-top: -2px!important;
+}
+
+.react-tabs [role=tablist]{
+    background: #edf2fb;
+    border-bottom: none;
+}
+
+.react-tabs [role=tab][aria-selected=true]{
+    border: none;
+    padding: 15px 15px;
 }

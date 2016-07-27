@@ -34,7 +34,7 @@ class FieldConfig extends Component{
                 </div>
 
                 <div className="dialog-field">
-                    <span className="dialog-field-label" style={{"margin-left": "30px"}}>Required</span>
+                    <span className="dialog-field-label" >Required</span>
                     <div style={{"flex": 6}}>
                         <Switch onChange={this.onChange}
                         />

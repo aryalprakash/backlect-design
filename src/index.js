@@ -8,11 +8,16 @@ import ConfirmDelete from './components/ConfirmDelete'
 import ListElements from './components/ListElements'
 import Table from './components/Table'
 import ListView from './components/ListView'
+import ListSelection from './components/ListSelection'
+import Users from './components/Users'
+import Roles from './components/Roles'
+import Permissions from './components/Permissions'
 
 import { Router, Route, hashHistory } from 'react-router'
 import NewAction from "./components/NewAction";
 import RoleAdd from "./components/RoleAdd";
 import FieldSettings from "./components/FieldSettings";
+import NewDialog from "./components/NewDialog";
 
 require('../css/main.css');
 require('../css/dialog.css');
@@ -29,7 +34,12 @@ ReactDOM.render(
     <Route path='/table' component={Table} />
     <Route path='/list-elements' component={ListElements} />
     <Route path='/list-view' component={ListView} />
+    <Route path='/list-selection' component={ListSelection} />
+    <Route path='/users' component={Users} />
+    <Route path='/roles' component={Roles} />
+    <Route path='/permissions' component={Permissions} />
     <Route path='/fieldsettings' component={FieldSettings} />
+    <Route path='/new-dialog' component={NewDialog} />
     </Router>,
 
     document.getElementById('root'));

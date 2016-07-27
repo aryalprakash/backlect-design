@@ -1,29 +1,96 @@
+import 'rc-dialog/assets/index.css';
 import React, { Component } from 'react';
 import Header from './Header'
+import Dialog from 'rc-dialog';
+import NewDialog from "./NewDialog";
 
 export default class ListElements extends Component {
+    constructor(){
+        super()
+        this.state = {
+            visible: false,
+            width: 1200,
+            destroyOnClose: false,
+            center: false
+        }
+
+        this.onClick = this.onClick.bind(this)
+        this.onClose = this.onClose.bind(this)
+        this.onDestroyOnCloseChange = this.onDestroyOnCloseChange.bind(this)
+        this.changeWidth = this.changeWidth.bind(this)
+        this.center = this.center.bind(this)
+    }
+
+    onClick(e) {
+        this.setState({
+                mousePosition: {
+                    x: e.pageX,
+                    y: e.pageY
+            },
+            visible: true
+        });
+    }
+
+    onClose(e) {
+        console.log(e);
+        this.setState({
+            visible: false
+        });
+    }
+
+    onDestroyOnCloseChange(e) {
+        this.setState({
+            destroyOnClose: e.target.checked
+        });
+    }
+
+    changeWidth() {
+        this.setState({
+            width: this.state.width === 600 ? 800 : 600
+        });
+    }
+
+    center(e) {
+        this.setState({
+            center: e.target.checked
+        });
+    }
+
     render() {
+
+        let dialog;
+        if (this.state.visible || !this.state.destroyOnClose) {
+            const style = {
+                width: this.state.width
+            };
+            let wrapClassName = '';
+            if (this.state.center) {
+                wrapClassName = 'center';
+            }
+            dialog = (
+                <Dialog
+                    visible={this.state.visible}
+                    wrapClassName={wrapClassName}
+                    animation="zoom"
+                    maskAnimation="fade"
+                    style={style}
+                    onClose={this.onClose}
+                    mousePosition={this.state.mousePosition}
+                >
+                    <NewDialog close={this.onClose} />
+                </Dialog>
+            );
+        }
+
         return (
             <div className="">
                 <Header />
-                <div className="table-head light-blue">
-                    <div className="table-title">Tables / Workouts</div>
-                    <div className="search-box">
-                        <input className="input-box" placeholder="Search" type="text" />
-                        <img src="../../img/select-project.png" className="search-icon" />
-                    </div>
-                    <div className="table-options">
-                        <div className="table-total">1 of 28</div>
-                        <div className="table-paging">
-                            <div className=" left-paging">L</div>
-                            <div className=" right-paging">R</div>
-                        </div>
-                        <div className="border-button table-new"><span className="bold">+</span>&nbsp;&nbsp;&nbsp; New Workout</div>
-                        <div className="border-button table-settings">S</div>
-                    </div>
-                </div>
+                {dialog}
                 <div className="table">
                     <div className="table-sidebar light-blue">
+                        <div className="table-head">
+                            <div className="table-title">Tables / Workouts</div>
+                        </div>
                         <div className="menu-item-list">
                             <div className="menu-item">
                                 <span className="menu-active"></span>
@@ -55,6 +122,24 @@ export default class ListElements extends Component {
                         </div>
                     </div>
                     <div className="table-content">
+                        <div className="table-head light-blue">
+
+                            <div className="search-box">
+                                <input className="input-box" placeholder="Search" type="text" />
+                                <img src="../../img/select-project.png" className="search-icon" />
+                            </div>
+                            <div className="table-options">
+                                <div className="table-total">1 of 28</div>
+                                <div className="table-paging">
+                                    <div className=" left-paging">L</div>
+                                    <div className=" right-paging">R</div>
+                                </div>
+                                <div className="border-button table-new" onClick={this.onClick}><span className="bold">+</span>&nbsp;&nbsp;&nbsp; New Workout</div>
+                                <div className="border-button table-settings">S</div>
+                            </div>
+
+
+                        </div>
                         <table className="table-main">
                             <thead>
                                 <tr className="table-row">
