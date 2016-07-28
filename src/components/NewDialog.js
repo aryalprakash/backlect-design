@@ -88,7 +88,7 @@ export default class NewDialog extends Component{
                     <div className="dialog-form-group">
                         <div className="dialog-form-label">Currency</div>
                         <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="$" />
+                            <div className="place-label">$</div><input type="text" className="input-box place-input" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
@@ -99,48 +99,6 @@ export default class NewDialog extends Component{
                     </div>
                     <div className="dialog-form-group">
                         <div className="dialog-form-label">Time</div>
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-label">Selection(state)</div>
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-label">Reference</div>
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-label">Location</div>
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-label">URL</div>
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-label">Tags</div>
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-label">Video</div>
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-label">Progress</div>
                         <div className="dialog-form-field">
                             <input type="text" className="input-box" placeholder="Pick Time" />
                         </div>

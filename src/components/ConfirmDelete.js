@@ -21,7 +21,7 @@ export default class ConfirmDelete extends Component{
 
     render() {
         return (
-            <div className="bg">
+            <div className="bg bg-dark">
                 <div className="dialog-box" style={this.states.style}>
                     <TitleSubtitle title={'Delete "' + this.states.table_name + ' " table'}
                                    subtitle="Are you sure you want to delete? Deleting this table will also delete all it’s

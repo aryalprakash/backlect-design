@@ -18,6 +18,11 @@ import NewAction from "./components/NewAction";
 import RoleAdd from "./components/RoleAdd";
 import FieldSettings from "./components/FieldSettings";
 import NewDialog from "./components/NewDialog";
+import FormBuilder from "./components/FormBuilder";
+import TableAdd from "./components/TableAdd";
+import PermissionsEdit from "./components/PermissionsEdit";
+import AddUser from "./components/AddUser";
+import Profile from "./components/Profile";
 
 require('../css/main.css');
 require('../css/dialog.css');
@@ -40,6 +45,11 @@ ReactDOM.render(
     <Route path='/permissions' component={Permissions} />
     <Route path='/fieldsettings' component={FieldSettings} />
     <Route path='/new-dialog' component={NewDialog} />
+    <Route path='/form-builder' component={FormBuilder} />
+    <Route path='/table-add' component={TableAdd} />
+    <Route path='/edit-permissions' component={PermissionsEdit} />
+    <Route path='/user-add' component={AddUser} />
+    <Route path='/profile' component={Profile} />
     </Router>,
 
     document.getElementById('root'));

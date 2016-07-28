@@ -25,6 +25,10 @@ body{
     justify-content: center;
 }
 
+.bg-dark{
+    background-color: #323058;
+}
+
 .dark-blue{
     background-color: #1976d2;
     min-height: 100vh;
@@ -330,15 +334,17 @@ body{
 }
 
 .table-sidebar{
-    width:20%;
-    /*max-width: 250px;*/
+    /*width:20%;*/
+    width: 250px;
     float: left;
     height: 869px;
     color: #ffffff;
+    position: absolute;
 }
 
 .table-content{
-    width: 80%;
+    width: 100%;
+    padding-left: 250px;
     /*max-width: 1090px;*/
     float: left;
     font-size: 14px;
@@ -346,6 +352,7 @@ body{
 
 .pink{
     background-color: #ff0080;
+    color: #ffffff;
 }
 
 .grey-green{
@@ -557,7 +564,7 @@ tr.table-row th.checkbox, tr.table-row td.checkbox {
     width: 100%;
     padding: 0 70px 0 70px;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     min-height: 70px;
     align-items: center;
 }
@@ -622,6 +629,7 @@ tr.table-row th.checkbox, tr.table-row td.checkbox {
 
 .button-group{
     display: inline-flex;
+    margin: 0 10px 0 10px;
 }
 
 .dialog-sidebar{
@@ -656,6 +664,78 @@ tr.table-row th.checkbox, tr.table-row td.checkbox {
     font-size: 11px;
 }
 
+.form-builder{
+
+}
+
+.form-options{
+    width: 20%;
+    float: left;
+    background-color: #ffffff;
+}
+
 .dialog-form.form-builder .dialog-form-group{
     padding: 0 30px 0 0;
+}
+
+.eighty{
+    width: 80%;
+    float: left;
+    max-width: 600px;
+}
+
+.twenty {
+    width: 20%;
+    float: left;
+}
+
+.button-grey{
+    border: 1px solid #dfe3e9;
+}
+
+.form-textarea{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rc-dialog-close{
+    display: none;
+}
+
+.place-label{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #f2f4f7, #ffffff);
+    border: solid 1px #dfe3e9;
+}
+
+.place-input{
+    padding-left: 40px;
+}
+
+.select-options{
+    height: 30px;
+}
+
+.drop-option{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.drop-option:hover{
+    font-weight: 600;
+    background-color: rgba(74, 128, 224, 0.2);
+}
+
+.drop-option.pink:hover{
+    background-color: #ff0080;
 }

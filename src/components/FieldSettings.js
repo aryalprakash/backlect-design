@@ -94,7 +94,7 @@ export default class FieldSettings extends Component{
 
     render() {
         return (
-            <div className="bg">
+            <div className="bg bg-dark">
                 <div className="dialog-box" style={this.states.style}>
                     <TitleSubtitle title="FIELD SETTINGS"
                                    subtitle="You can set additional settings to fields like validation, and permissions."

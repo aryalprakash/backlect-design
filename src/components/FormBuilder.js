@@ -99,91 +99,90 @@ export default class FormBuilder extends Component{
 
                 </div>
                 <div className="dialog-center-content">
+
                     <div className="dialog-form form-builder">
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="E-mail" />
                         </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-field">
-                            <textarea className="input-box textarea" placeholder="Tell us about your project" />
+                        <div className="form-options twenty">
+                            <div className="button-group">
+                                <div className="border-button table-settings button-grey">S</div>
+                                <div className="border-button table-settings button-grey">D</div>
+                            </div>
                         </div>
                     </div>
+                    <div className="dialog-form-group form-textarea">
+                        <div className="dialog-form-field eighty">
+                            <textarea className="input-box textarea" placeholder="Tell us about your project" />
+                        </div>
+                        <div className="form-options twenty">
+                            <div className="button-group">
+                                <div className="border-button table-settings button-grey">S</div>
+                                <div className="border-button table-settings button-grey">D</div>
+                            </div>
+                        </div>
+
+                    </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Basic" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Email" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <StarRating name="rating" size={30} totalStars={5} />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <Dropzone style={dropStyle} >
                                 <div>Try dropping some files here, or click to select files to upload.</div>
                             </Dropzone>
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Insert Number" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="$" />
+                        <div className="dialog-form-field eighty">
+                            <div className="place-label">$</div><input type="text" className="input-box place-input" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Pick Date" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Pick Time" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Pick Time" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Pick Time" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Pick Time" />
                         </div>
                     </div>
                     <div className="dialog-form-group">
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-field">
-                            <input type="text" className="input-box" placeholder="Pick Time" />
-                        </div>
-                    </div>
-                    <div className="dialog-form-group">
-                        <div className="dialog-form-field">
+                        <div className="dialog-form-field eighty">
                             <input type="text" className="input-box" placeholder="Pick Time" />
                         </div>
                     </div>

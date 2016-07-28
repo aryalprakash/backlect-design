@@ -19,7 +19,7 @@ export default class RoleAdd extends Component{
 
     render() {
         return (
-            <div className="bg">
+            <div className="bg bg-dark">
                 <div className="dialog-box" style={this.states.style}>
                     <TitleSubtitle title="New Role"
                                    subtitle="Roles can be used to delegate access permissions to your backlect admins."

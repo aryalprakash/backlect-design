@@ -20,7 +20,7 @@ export default class NewAction extends Component{
 
     render() {
         return (
-            <div className="bg">
+            <div className="bg bg-dark">
                 <div className="dialog-box" style={this.states.style}>
                     <TitleSubtitle title="New Action"
                                    subtitle="Like, comment, counts are all seen as actions in backlect, and like fields can have Permissions set."
